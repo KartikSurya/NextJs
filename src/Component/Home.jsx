@@ -12,7 +12,7 @@ export default function Home({ q, language }) {
 
   async function getAPIData1() {
     setPage(1)
-    let response = await fetch(`https://newsapi.org/v2/everything?q=${q}&language=${language}&pageSize=24&page=${1}&sortBy=publishedAt&apiKey=7239c9d390e84fce8ff1866d6d00a3fa`)
+    let response = await fetch(`https://newsapi.org/v2/everything?q=${q}&language=${language}&pageSize=24&page=${1}&sortBy=publishedAt&apiKey=c5a68ec2a6bb440b8b1973c618b85b5b`)
     response = await response.json()
 
     if (response.status === "ok") {
@@ -23,7 +23,7 @@ export default function Home({ q, language }) {
 
   async function getAPIData2() {
     setPage(page + 1)
-    let response = await fetch(`https://newsapi.org/v2/everything?q=${q}&language=${language}&pageSize=24&page=${page}&sortBy=publishedAt&apiKey=7239c9d390e84fce8ff1866d6d00a3fa`)
+    let response = await fetch(`https://newsapi.org/v2/everything?q=${q}&language=${language}&pageSize=24&page=${page}&sortBy=publishedAt&apiKey=c5a68ec2a6bb440b8b1973c618b85b5b`)
     response = await response.json()
 
     if (response.status === "ok") {
